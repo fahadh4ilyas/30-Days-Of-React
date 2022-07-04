@@ -1408,7 +1408,7 @@ We use for loop when we know how many iteration we go. Let's see the following e
 // for loop syntax
 
 for (initialization, condition, increment/decrement) {
-    code goes here
+    // code goes here
 }
 ```
 
