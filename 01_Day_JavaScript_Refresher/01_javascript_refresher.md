@@ -1258,11 +1258,8 @@ switch (day) {
   default:
     console.log('It is not a week day.')
 }
-```
 
 // Examples to use conditions in the cases
-
-```js
 let num = prompt('Enter number')
 switch (true) {
   case num > 0:
