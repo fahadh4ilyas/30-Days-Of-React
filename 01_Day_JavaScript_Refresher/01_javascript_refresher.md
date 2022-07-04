@@ -1089,9 +1089,9 @@ if (num > 0) {
 As you can see in the condition example above, 3 is greater than 0, so it is a positive number. The condition was true and the block of code was executed. However, if the condition is false, we won't see any results.
 
 ```js
-let isRaining = true
+let isRaining = false
 if (isRaining) {
-  console.log('Remember to take your rain coat.')
+  console.log('Remember to take your rain coat.') // this will not be executed
 }
 ```
 
