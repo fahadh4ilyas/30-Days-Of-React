@@ -68,13 +68,12 @@
       - [Exercises: Level 2](#exercises-level-2)
       - [Exercises: Level 3](#exercises-level-3)
   - [5. Loops](#5-loops)
-    - [Types of Loops](#types-of-loops)
-      - [1. for](#1-for)
-      - [2. while](#2-while)
-      - [3. do while](#3-do-while)
-      - [4. for of](#4-for-of)
-      - [5. forEach](#5-foreach)
-      - [6. for in](#6-for-in)
+    - [1. for](#1-for)
+    - [2. while](#2-while)
+    - [3. do while](#3-do-while)
+    - [4. for of](#4-for-of)
+    - [5. forEach](#5-foreach)
+    - [6. for in](#6-for-in)
     - [Interrupting a loop and skipping an item](#interrupting-a-loop-and-skipping-an-item)
       - [break](#break)
       - [continue](#continue)
@@ -1401,9 +1400,7 @@ Loops:
 
 A loop usually goes until the condition gets false. But sometimes we like to interrupt the loop or skip an item during iteration. We use _break_ to interrupt the loop and _continue_ to skip an item during iteration.
 
-#### Types of Loops
-
-##### 1. for
+#### 1. for
 
 We use for loop when we know how many iteration we go. Let's see the following example
 
@@ -1485,7 +1482,7 @@ for (let i = lastIndex; i >= 0; i--) {
 console.log(newArray)
 ```
 
-##### 2. while
+#### 2. while
 
 We use the while loop when we do not know how man iteration we go in advance.
 
@@ -1497,7 +1494,7 @@ while (count > 0) {
 }
 ```
 
-##### 3. do while
+#### 3. do while
 
 Do while run at least once if the condition is true or false
 
@@ -1521,7 +1518,7 @@ do {
 
 While loop is the least important loop in many programming languages.
 
-##### 4. for of
+#### 4. for of
 
 The for of loop is very handy to use it with array. If we are not interested in the index of the array a for of loop is preferable to regular for loop or forEach loop.
 
@@ -1537,7 +1534,7 @@ for (const country of countries) {
 }
 ```
 
-##### 5. forEach
+#### 5. forEach
 
 If we are interested in the index of the array forEach is preferable to for of loop. The forEach array method takes a callback function, the callback function takes three arguments: the item, the index and the array itself.
 
@@ -1553,7 +1550,7 @@ countries.forEach((country, i, arr) => {
 })
 ```
 
-##### 6. for in
+#### 6. for in
 
 The for in loop can be used with object literals to get the keys of the object.
 
