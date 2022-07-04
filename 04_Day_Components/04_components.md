@@ -14,7 +14,7 @@
 
 </div>
 
-[<< Day 3](../30-Days-Of-React/03_Day_Setting_Up/03_setting_up.md) | [Day 5 >>](../05_Day_Props/05_props.md)
+[<< Day 3](../03_Day_Setting_Up/03_setting_up.md) | [Day 5 >>](../05_Day_Props/05_props.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_4.jpg)
 
@@ -39,7 +39,7 @@ A React component is a small, reusable code, which is responsible for one part o
 Components can be:
 
 - Functional Component / Presentational Component / Stateless Component / Dumb Component
-- Class Component / Container Component/ Statefull Component / Smart Component
+- Class Component / Container Component/ Stateful Component / Smart Component
 
 The classification of components above does not work for the latest version of React, but it is good to know the former definition and how the previous versions work.
 
@@ -517,4 +517,4 @@ ReactDOM.render(<HexaColor />, rootElement)
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 3](../30-Days-Of-React/03_Day_Setting_Up/03_setting_up.md) | [Day 5 >>](../05_Day_Props/05_props.md)
+[<< Day 3](../03_Day_Setting_Up/03_setting_up.md) | [Day 5 >>](../05_Day_Props/05_props.md)

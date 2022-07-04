@@ -14,7 +14,7 @@
 
 </div>
 
-[<< Day 18](../18_Fetch_And_Axios/18_fetch_axios.md) | [Day 20>>]()
+[<< Day 18](../18_Fetch_And_Axios/18_fetch_axios.md) | [Day 20>>](../20_projects/20_projects.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_19.jpg)
 
@@ -30,9 +30,9 @@ Congratulations for making it to this far. Now, you have a solid understanding o
 
 ## Exercises: Level 1
 
-Use the following two APIs, [all cats](https://api.thecatapi.com/v1/breeds) and [a single cat][https://api.thecatapi.com/v1/images/search?breed_id=abys]. In the single cat API, you can get url property which is the image of the cat.
+Use the following two APIs, [all cats](https://api.thecatapi.com/v1/breeds) and [a single cat](https://api.thecatapi.com/v1/images/search?breed_id=abys). In the single cat API, you can get url property which is the image of the cat.
 Your result should look like this [demo](https://www.30daysofreact.com/day-19/cats).
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 18](../18_Fetch_And_Axios/18_fetch_axios.md) | [Day 20>>]()
+[<< Day 18](../18_Fetch_And_Axios/18_fetch_axios.md) | [Day 20>>](../20_projects/20_projects.md)

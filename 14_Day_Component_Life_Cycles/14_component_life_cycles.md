@@ -21,10 +21,10 @@
 - [Component Life Cycles](#component-life-cycles)
   - [What is component life cycle](#what-is-component-life-cycle)
   - [Mounting](#mounting)
-    - [Contructor](#contructor)
+    - [constructor](#constructor)
     - [getDerivedStateFromPros](#getderivedstatefrompros)
-    - [Render](#render)
-    - [ComponentDidMount](#componentdidmount)
+    - [render](#render)
+    - [componentDidMount](#componentdidmount)
   - [Updating](#updating)
     - [getDerivedStateFromProps](#getderivedstatefromprops)
     - [shouldComponentUpdate](#shouldcomponentupdate)
@@ -95,9 +95,9 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
 ```
 
-### Contructor
+### constructor
 
-Nowadays we write class based-component without a constructor and we can write the state also outside the constructor. In older version React we the state used be always inside the constructor.
+Nowadays we write class based-component without a constructor and we can write the state also outside the constructor. In older version of React, the state always used to be inside the constructor.
 
 The constructor() method is executed before any other methods, when component is initiated and it is the place where to set the initial state and other values.
 In class we use constructor parameter to inherit from parents and in React to the constructor take a props parameter and the super method has to be also called.
@@ -176,7 +176,7 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App firstName='Asabeneh' />, rootElement)
 ```
 
-### Render
+### render
 
 The render method is a required method when we create a class-based component. The render method is where we return JSX. The render methods render whenever there is change in state. Do not set your state inside render method.
 
@@ -217,7 +217,7 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App firstName='Asabeneh' />, rootElement)
 ```
 
-### ComponentDidMount
+### componentDidMount
 
 As we can understand the name of the method that this method called after component is render. This a place place to setting time interval and calling API. Look at the following setTimeout implementation in componentDidMount method.
 

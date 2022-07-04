@@ -205,7 +205,7 @@ First, let us write on the head part of the page.
   <head>
     <title>30DaysOfScript:Internal Script</title>
     <script>
-      console.log('Welcome to 30DaysOfJavaScript')
+      console.log('Hello, World!')
     </script>
   </head>
   <body></body>
@@ -223,7 +223,7 @@ This is how we write an internal script most of the time. Writing the JavaScript
   <body>
     <button onclick="alert('Welcome to 30DaysOfJavaScript!');">Click Me</button>
     <script>
-      console.log('Welcome to 30DaysOfJavaScript')
+      console.log('Hello, World!')
     </script>
   </body>
 </html>
@@ -309,6 +309,20 @@ firstName = 'Eyob'
 
 const PI = 3.14 // Not allowed to reassign PI to a new value
 // PI = 3.
+
+const x = 10
+
+if (x > 10) {
+  let y = 15
+  const z = 20
+  console.log(y, z) // 15 20
+} else {
+  let y = 20
+  const z = 30
+  console.log(y, z) // 20 30
+}
+
+console.log(y, z) // y and z are not accessible because const and let are block scoped. 
 ```
 
 ### 2. Data types
@@ -1006,9 +1020,9 @@ const webTechs = [
    ```
 
    - add 'Meat' in the beginning of your shopping cart if it has not been already added
-   - add Sugar at the end of you shopping cart if it has not been already added
+   - add 'Sugar' at the end of you shopping cart if it has not been already added
    - remove 'Honey' if you are allergic to honey
-   - modify Tea to 'Green Tea'
+   - modify 'Tea' to 'Green Tea'
 
 1. In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
 1. In the webTechs array check if Sass exists in the array and if it exists print 'Sass is a CSS preprocess'. If it does not exist add Sass to the array and print the array.
@@ -1326,7 +1340,7 @@ isRaining
 
 1. Write a code which can give grades to students according to theirs scores:
    - 80-100, A
-   - 70-89, B
+   - 70-79, B
    - 60-69, C
    - 50-59, D
    - 0-49, F
@@ -1670,10 +1684,10 @@ function letsLearnScope() {
     let a = 'Python'
     let b = 20
     let d = 40
-    console.log(a, b, c) // Python 20 30
+    console.log(a, b, c, d) // Python 20 30 40
   }
-  // we can not access c because c's scope is only the if block
-  console.log(a, b) // JavaScript 10
+  // we can not access d because d's scope is only the if block
+  console.log(a, b, c) // JavaScript 10 30
 }
 letsLearnScope()
 console.log(a, b) // JavaScript 10, accessible
@@ -1989,7 +2003,7 @@ console.log(copyPerson.hasOwnProperty('score'))
 ##### Exercises: Level 2
 
 1. Find the person who has many skills in the users object.
-1. Count logged in users,count users having greater than equal to 50 points from the following object.
+1. Count logged in users, count users having greater than equal to 50 points from the following object.
 
    ````js
    const users = {
@@ -2042,7 +2056,7 @@ console.log(copyPerson.hasOwnProperty('score'))
        isLoggedIn: false,
        points: 40
      }
-   }```
+   }
 
    ````
 
@@ -2054,7 +2068,7 @@ console.log(copyPerson.hasOwnProperty('score'))
 
 ##### Exercises: Level 3
 
-1. Create an object literal called _personAccount_. It has _firstName, lastName, incomes, expenses_ properties and it has _totalIncome, totalExpense, accountInfo,addIncome, addExpense_ and _accountBalance_ methods. Incomes is a set of incomes and its description and expenses is a set of incomes and its description.
+1. Create an object literal called _personAccount_. It has _firstName, lastName, incomes, expenses_ properties and it has _totalIncome, totalExpense, accountInfo,addIncome, addExpense_ and _accountBalance_ methods. Incomes and expenses are a set of its amount and description.
 2. \*\*\*\* Questions:2, 3 and 4 are based on the following two arrays:users and products ()
 
 ```js
@@ -3075,7 +3089,9 @@ const rectangle = {
   height: 10,
 }
 
-let { width, height, perimeter } = rectangleconsole.log(
+let { width, height, perimeter } = rectangle
+
+console.log(
   width,
   height,
   perimeter
@@ -3408,7 +3424,7 @@ Let see different examples
 
 ```js
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
-countries.forEach(function (country, index, arr) {
+countries.forEach(function (country, i, arr) {
   console.log(i, country.toUpperCase())
 })
 ```
@@ -3432,9 +3448,9 @@ For example if we like to change each country to uppercase and store it back to 
 ```js
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
 const newCountries = []
-countries.forEach((country) => newCountries.push(country))
+countries.forEach((country) => newCountries.push(country.toUpperCase()))
 
-console.log(newCountries) // ["Finland", "Estonia", "Sweden", "Norway"]
+console.log(newCountries) // ["FINLAND", "ESTONIA", "SWEDEN", "NORWAY"]
 ```
 
 Let us see more examples. For instance if we want to sum an array of numbers we can use forEach or reduce. Let us see how we use forEach to sum all numbers in an array.
@@ -3717,7 +3733,7 @@ Let us find the index of the first country in the array which has exactly six ch
 ```js
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
 const index = countries.findIndex((country) => country.length === 6)
-console.log(index //2
+console.log(index) //2
 ```
 
 Let us find the index of the first country in the array which has the letter 'o'.
@@ -3725,7 +3741,7 @@ Let us find the index of the first country in the array which has the letter 'o'
 ```js
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
 const index = countries.findIndex((country) => country.includes('o'))
-console.log(index // 1
+console.log(index) // 1
 ```
 
 Let us move on to the next functional programming, some.
@@ -3770,11 +3786,11 @@ console.log(allAreEven) // false
 console.log(allAreOdd)  // false
 
 const evens = [0, 2, 4, 6, 8, 10]
-const someAreEvens = evens.some((n) => n % 2 === 0)
-const someAreOdds = evens.some((n) => n % 2 !== 0)
+const allAreEvens = evens.every((n) => n % 2 === 0)
+const allAreOdds = evens.every((n) => n % 2 !== 0)
 
-console.log(someAreEvens) // true
-console.log(someAreOdds)  // false
+console.log(allAreEvens) // true
+console.log(allAreOdds)  // false
 ```
 
 #### Exercises

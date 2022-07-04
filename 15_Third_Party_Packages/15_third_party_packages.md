@@ -85,7 +85,6 @@ After installing node-sass you can start using Sass in React. Create a styles fo
 /* ./styles/header.scss */
 header {
   background-color: #61dbfb;
-  padding: 25;
   padding: 10px;
   margin: 0;
 }
@@ -95,7 +94,7 @@ header {
 // Header.js
 import React from 'react'
 import './styles/header.scss
-const Header = () = (
+const Header = () => (
    <header>
           <div className='header-wrapper'>
             <h1>30 Days Of React</h1>
@@ -147,7 +146,6 @@ Naming:
 /* ./styles/header.module.scss */
 .header {
   background-color: #61dbfb;
-  padding: 25;
   padding: 10px;
   margin: 0;
 }
@@ -384,7 +382,6 @@ const Title = styled.h1`
 `
 const Header = styled.header`
   background-color: #61dbfb;
-  padding: 25;
   padding: 10px;
   margin: 0;
 `
@@ -448,4 +445,4 @@ Try to also learn how to use the package _classnames_ and _validator_.
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 14](../14_Day_Component_Life_Cycles/14_component_life_cycles.md) | [Day 16 >>]()
+[<< Day 14](../14_Day_Component_Life_Cycles/14_component_life_cycles.md) | [Day 16 >>](../16_Higher_Order_Component/16_higher_order_component.md)
